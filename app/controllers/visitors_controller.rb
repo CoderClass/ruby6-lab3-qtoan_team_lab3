@@ -1,6 +1,6 @@
 class VisitorsController < ApplicationController
   def index
-  	@products = Product.all.order
+  	@products = Product.all
   	if params[:sort]=='SortProducts'
     @products = @products.order('name desc')
 	end
